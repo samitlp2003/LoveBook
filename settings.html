@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings | LoveBook</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #ffe6eb, #ffffff);
+      color: #333;
+    }
+
+    .navbar {
+      background: #ffb6c1;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #ff0055;
+      font-weight: bold;
+    }
+
+    .settings-container {
+      max-width: 700px;
+      margin: 3rem auto;
+      background: #fff0f5;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(255, 182, 193, 0.3);
+    }
+
+    .settings-container h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #ff3366;
+      margin-bottom: 2rem;
+    }
+
+    .setting-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .setting-item label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #ff3399;
+    }
+
+    .setting-item input,
+    .setting-item select {
+      width: 100%;
+      padding: 0.8rem;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .save-button {
+      display: block;
+      width: 100%;
+      padding: 0.9rem;
+      background: #ff3399;
+      color: #fff;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      margin-top: 2rem;
+      transition: background 0.3s ease;
+    }
+
+    .save-button:hover {
+      background: #e60073;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">❤️ LoveBook</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="messages.html">Messages</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="settings.html" class="active">Settings</a>
+      <a href="reels.html">Reels</a>
+    </nav>
+  </header>
+
+  <!-- Settings Section -->
+  <main class="settings-container">
+    <h2>⚙️ Profile Settings</h2>
+
+    <div class="setting-item">
+      <label for="username">Username</label>
+      <input type="text" id="username" value="Sami Rahman" />
+    </div>
+
+    <div class="setting-item">
+      <label for="status">Status</label>
+      <input type="text" id="status" value="Dreamer | Coder | Lover ❤️" />
+    </div>
+
+    <div class="setting-item">
+      <label for="privacy">Privacy</label>
+      <select id="privacy">
+        <option value="public">Public</option>
+        <option value="friends">Friends Only</option>
+        <option value="private">Private</option>
+      </select>
+    </div>
+
+    <button class="save-button">💾 Save Changes</button>
+  </main>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reels | LoveBook</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(145deg, #ffe0f0, #ffffff);
+      color: #333;
+    }
+
+    .navbar {
+      background: #ffb6c1;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #ff0055;
+      font-weight: bold;
+    }
+
+    .reels-container {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .reel {
+      background: #fff0f5;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(255, 182, 193, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .reel:hover {
+      transform: scale(1.03);
+    }
+
+    .reel video,
+    .reel img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .reel-description {
+      padding: 1rem;
+      font-size: 1rem;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">❤️ LoveBook</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="messages.html">Messages</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="settings.html">Settings</a>
+      <a href="reels.html" class="active">Reels</a>
+    </nav>
+  </header>
+
+  <!-- Reels Section -->
+  <section class="reels-container">
+    <div class="reel">
+      <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls poster="https://via.placeholder.com/400x225/ffc0cb/000000?text=Love+Reel+1"></video>
+      <div class="reel-description">When love meets code 💞</div>
+    </div>
+    <div class="reel">
+      <video src="https://www.w3schools.com/html/movie.mp4" controls poster="https://via.placeholder.com/400x225/ffb6c1/000000?text=Love+Reel+2"></video>
+      <div class="reel-description">Coding under the stars 🌠</div>
+    </div>
+    <div class="reel">
+      <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls poster="https://via.placeholder.com/400x225/f8c8dc/000000?text=Love+Reel+3"></video>
+      <div class="reel-description">Our first commit together ❤️‍🔥</div>
+    </div>
+  </section>
+</body>
+</html>

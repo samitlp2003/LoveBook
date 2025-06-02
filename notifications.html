@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notifications | LoveBook</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #ffe6eb, #ffffff);
+      color: #333;
+    }
+
+    .navbar {
+      background: #ffb6c1;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #ff0055;
+      font-weight: bold;
+    }
+
+    .notifications-container {
+      max-width: 800px;
+      margin: 3rem auto;
+      background: #fff0f5;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(255, 182, 193, 0.3);
+    }
+
+    .notifications-container h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #ff3366;
+      margin-bottom: 2rem;
+    }
+
+    .notification {
+      background: #fff;
+      padding: 1rem 1.5rem;
+      border-radius: 15px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .notification:hover {
+      transform: scale(1.02);
+    }
+
+    .notification-text {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+
+    .notification-time {
+      font-size: 0.85rem;
+      color: #999;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">❤️ LoveBook</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="messages.html">Messages</a>
+      <a href="notifications.html" class="active">Notifications</a>
+      <a href="settings.html">Settings</a>
+      <a href="reels.html">Reels</a>
+    </nav>
+  </header>
+
+  <!-- Notifications Section -->
+  <main class="notifications-container">
+    <h2>🔔 Notifications</h2>
+
+    <div class="notification">
+      <div class="notification-text">Jenny liked your post 💗</div>
+      <div class="notification-time">2 min ago</div>
+    </div>
+
+    <div class="notification">
+      <div class="notification-text">Alex commented: “Amazing work bro!” 💬</div>
+      <div class="notification-time">10 min ago</div>
+    </div>
+
+    <div class="notification">
+      <div class="notification-text">Maria followed you 🌸</div>
+      <div class="notification-time">1 hour ago</div>
+    </div>
+  </main>
+</body>
+</html>
